@@ -151,16 +151,14 @@ func ItemGet(in chan string, out chan common.CPU) (result string, err error) {
 
 		output = output + "\n"
 		fmt.Print(output)
-		out <- cpu
+		WriteToDB(cpu)
 		body.Close()
 	}
 
 	return "ok", nil
 }
 
-func WriteToDB(in chan common.CPU) {
-	cpu := <-in
-
+func WriteToDB(cpu common.CPU) {
 	if cpu.Name == "" && cpu.Price == 0 {
 		return
 	}
