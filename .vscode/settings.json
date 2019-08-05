@@ -1,0 +1,21 @@
+{
+    "go.goroot": "D:\\Go",
+    "go.gopath": "D:\\Code\\Go",
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.autocompleteUnimportedPackages": true,
+    "go.gocodeAutoBuild": false,
+    "go.buildOnSave": "package",
+    "go.lintOnSave": "package",
+    "go.lintFlags": [
+        "--fast",
+        //"--debug",
+        "-Dgotype",
+        "-Dgas",
+        "-Dgosec",
+        // "-Dvet",
+        "--exclude=should be",
+        "--exclude=declaration of \"err",
+        "--exclude=should have comment"
+      ],
+    "editor.fontSize": 16
+}
