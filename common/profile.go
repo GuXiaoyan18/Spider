@@ -25,6 +25,8 @@ type Card struct {
 	Car_core          string
 	Core_frequency    string
 	Gra_mem_frequency string
+	Gra_mem_capacity  string
+	Gra_mem_bit       string
 	Power_interface   string
 	Power_mode        string
 }
@@ -121,13 +123,13 @@ type SSD struct {
 	Img_src         string
 	Tb_link         string
 	Capacity        string
-	Inter_type      string
-	Speed           string
 	Hard_size       string
-	Flash_structure string
-	Period          string
-	Shape_size      string
-	Weight          string
+	Inter_type      string
+	Cache           string
+	Read_speed      string
+	Write_speed     string
+	Avg_normal_time string
+	Avg_search_time string
 }
 
 type Cddrive struct {
